@@ -1,0 +1,22 @@
+.SiteTitle
+    color: #ffffff
+    font-family: 'Caudex', 'Georgia', serif
+    font-weight: normal
+    display: inline-block
+    font-size: 24px
+    &::after
+        content: ""
+        display: block
+        background-color: #fff
+        height: 0.5px
+        width: 0%
+        transition-property: width
+        transition-duration: .2s
+
+.IndexLink
+    text-decoration: none
+    &:hover, &:focus
+        outline: none
+        .SiteTitle
+            &::after
+                width: 100%

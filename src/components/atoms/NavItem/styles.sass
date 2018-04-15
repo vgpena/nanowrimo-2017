@@ -1,0 +1,21 @@
+.NavItem
+    color: #fff
+    font-size: 20
+    display: inline-block
+    font-family: "Gothic A1", "Arial Narrow", "Arial", sans-serif
+    text-decoration: none
+    &::after
+        content: ""
+        display: block
+        background-color: #fff
+        height: 1px
+        width: 0%
+        transition-property: width
+        transition-duration: .2s
+    &:focus, &:hover
+        outline: none
+        &::after
+            width: 100%
+    &.--active
+        &::after
+            width: 100%
