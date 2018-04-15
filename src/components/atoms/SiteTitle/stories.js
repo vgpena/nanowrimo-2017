@@ -1,9 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import Content from '../components/Content';
 
-storiesOf('Atoms/Content', module)
+import { Content } from './';
+
+storiesOf('atoms/Content', module)
   .add('with text', () => (
     <Content className="foo" content="foo" />
   ))
