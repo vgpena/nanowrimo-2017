@@ -1,0 +1,42 @@
+.DayIndicator
+    display: table
+    white-space: nowrap
+    &::before, &::after
+      border-top: 2px solid #fff
+      content: ''
+      display: table-cell
+      position: relative
+      top: 0.5em
+      width: 50%
+      transform: translateY(7px)
+    &::before
+        width: 70%
+    &::after
+        transform: translateY(7px) translateX(-2px)
+    @media screen and (min-width: 60rem)
+        white-space: initial
+        float: right
+        &::before, &::after
+            content: initial
+
+.DayIndicator-inner
+    color: #ffffff
+    font-family: "Fira Mono", "Fira Code", monospace
+    font-weight: normal
+    border: solid 2px #fff
+    border-radius: 2em
+    padding: 0 2em
+    height: 2em
+    line-height: 2em
+    font-size: 16px
+    display: inline-block
+    transform: translateX(-1px)
+    @media screen and (min-width: 60rem)
+        text-align: center
+        width: 2em
+        height: 2em
+        border-radius: 50%
+        padding: 1em
+        line-height: 1.25em
+
+
