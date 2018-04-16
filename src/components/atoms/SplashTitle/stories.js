@@ -6,5 +6,5 @@ import { SplashTitle } from './';
 const stories = storiesOf('atoms/SplashTitle', {});
 
 stories.add('default', () => {
-  return <SplashTitle name="SplashTitle" />;
+  return <SplashTitle />;
 });

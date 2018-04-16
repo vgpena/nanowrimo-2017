@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { SiteTitle } from './';
+import { FooterTitle } from './';
 
-const stories = storiesOf('atoms/SiteTitle', {});
+const stories = storiesOf('atoms/FooterTitle', {});
 
 stories.add('default', () => {
-  return <SiteTitle />;
+  return <FooterTitle />;
 });

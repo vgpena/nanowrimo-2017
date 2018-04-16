@@ -23,3 +23,24 @@ stories.add('active', () => {
     />
   );
 })
+
+stories.add('tech', () => {
+  return (
+    <NavItem
+      URL="https://example.com"
+      text="Nav Item"
+      tech={ true }
+    />
+  );
+})
+
+stories.add('tech + active', () => {
+  return (
+    <NavItem
+      URL="https://example.com"
+      text="Nav Item"
+      active={ true }
+      tech={ true }
+    />
+  );
+})

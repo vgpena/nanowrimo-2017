@@ -8,6 +8,9 @@ export class NavItem extends React.Component {
     if (this.props.active) {
       classes += " --active";
     }
+    if (this.props.tech) {
+      classes += " --tech";
+    }
 
     return (
       <a href={ this.props.URL } className={ classes }>
@@ -21,4 +24,5 @@ NavItem.PropTypes = {
   URL: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   active: PropTypes.bool,
+  tech: PropTypes.bool,
 }
