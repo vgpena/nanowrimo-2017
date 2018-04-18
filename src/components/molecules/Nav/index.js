@@ -6,13 +6,18 @@ import { NavItem } from '../../atoms/NavItem';
 
 export class Nav extends React.Component {
   render() {
+    let itemClasses = "Nav-list-item";
+    if (this.props.stackOnMobile) {
+      itemClasses += " --stack";
+    }
+
     return (
       <nav className="Nav">
         <ol className="Nav-list">
           {
             this.props.navItems.map((navItem) => {
               return (
-                <li className="Nav-list-item">
+                <li className={itemClasses}>
                   <NavItem {...navItem} />
                 </li>
               )
@@ -26,4 +31,5 @@ export class Nav extends React.Component {
 
 Nav.propTypes = {
   navItems: PropTypes.arrayOf(NavItem.PropTypes),
+  stackOnMobile: PropTypes.bool,
 };

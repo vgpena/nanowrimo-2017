@@ -1,3 +1,9 @@
+=beforeDash
+    &::before
+        content: "-"
+        display: inline-block
+        padding: 0.25em
+    
 .Nav
     display: inline-block
 
@@ -9,7 +15,8 @@
 .Nav-list-item
     display: inline-block
     &:not(:first-child)
-        &::before
-            content: "-"
-            display: inline-block
-            padding: 0.25em
+        +beforeDash
+    &.--stack
+        @media screen and (max-width: 40rem)
+            display: block
+            +beforeDash

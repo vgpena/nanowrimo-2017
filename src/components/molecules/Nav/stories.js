@@ -40,6 +40,10 @@ stories.add('default', () => {
   return <Nav navItems={ items } />;
 });
 
+stories.add('stack on mobile', () => {
+  return <Nav navItems={ items } stackOnMobile />;
+});
+
 stories.add('only one item', () => {
   return <Nav navItems={ [items[0]] } />;
 });
